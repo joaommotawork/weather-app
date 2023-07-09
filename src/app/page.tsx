@@ -41,9 +41,6 @@ export default function Home() {
 		}
 	};
 
-	console.log('CURRENT WEATHER', currentWeather);
-	console.log('Forecast', forecast);
-
 	return (
 		<main className='w-full h-full min-h-screen px-20 py-5 text-black bg-white lg:py-20 min-w-screen lg:px-60'>
 			<Search onSearchChange={handleOnSearchChange} />

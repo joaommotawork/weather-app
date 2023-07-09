@@ -26,8 +26,6 @@ export default function Forecast({ data }: ForecastProps) {
 		WEEK_DAYS.slice(0, dayInAWeek),
 	);
 
-	console.log('forecastDays', forecastDays);
-
 	return (
 		<>
 			<label className='text-lg font-bold'>Previsão 7 Dias</label>

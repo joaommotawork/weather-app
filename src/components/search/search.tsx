@@ -19,7 +19,6 @@ export default function Search({ onSearchChange }: SearchProps) {
 	};
 
 	async function loadOptions(search: any) {
-		console.log('SEARCH', search);
 		try {
 			const response = await axios.request(
 				geoAPIOptions(
@@ -27,7 +26,6 @@ export default function Search({ onSearchChange }: SearchProps) {
 				),
 			);
 			const responseData = await response.data;
-			console.log('RESPONSE DATA', responseData);
 			return {
 				options: responseData.data.map((city: any) => ({
 					label: `${city.name}, ${city.countryCode}`,
