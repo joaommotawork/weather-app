@@ -35,7 +35,7 @@ export default function Forecast({ data }: ForecastProps) {
 						<AccordionItem key={index}>
 							<AccordionItemHeading>
 								<AccordionItemButton>
-									<div className='flex items-center justify-between px-5 my-3 text-white bg-gray-900 rounded-lg drop-shadow'>
+									<div className='flex flex-col items-center justify-between px-5 py-5 my-3 text-white bg-gray-900 rounded-lg sm:flex-row drop-shadow'>
 										<div className='flex items-center justify-center gap-3'>
 											<img
 												alt='weather'

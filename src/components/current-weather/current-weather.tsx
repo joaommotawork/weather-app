@@ -4,7 +4,7 @@ interface CurrentWeatherProps {
 
 export default function CurrentWeather({ data }: CurrentWeatherProps) {
 	return (
-		<div className='flex items-center justify-center w-full gap-10 p-10 my-5 text-white bg-gray-900 rounded-lg drop-shadow'>
+		<div className='flex flex-col items-center justify-center w-full gap-10 p-10 my-5 text-white bg-gray-900 rounded-lg sm:flex-row drop-shadow'>
 			<div className='flex items-center justify-between'>
 				<img
 					alt='weather'

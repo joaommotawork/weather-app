@@ -42,14 +42,12 @@ export default function Search({ onSearchChange }: SearchProps) {
 	}
 
 	return (
-		<section>
-			<AsyncPaginate
-				loadOptions={loadOptions}
-				placeholder='Pesquisar por cidade'
-				debounceTimeout={600}
-				value={search}
-				onChange={handleOnChange}
-			/>
-		</section>
+		<AsyncPaginate
+			loadOptions={loadOptions}
+			placeholder='Pesquisar por cidade'
+			debounceTimeout={600}
+			value={search}
+			onChange={handleOnChange}
+		/>
 	);
 }
